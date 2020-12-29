@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h2= "The interface and read/update/delete will be updated..."
+    form(action='/post' method='POST')
+        label
+            | name:
+            input(type='text', name='name', value='')
+            | surname:
+            input(type='text', name='surname', value='')
+        input(type='submit', value='Submit')
