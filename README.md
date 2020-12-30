@@ -5,7 +5,7 @@
 #### Task List ✓
 - [x] "C"reate functionality ✓
 - [x] "R"ead func. ✓
-- [ ] "U"pdate func.
+- [X] "U"pdate func. ✓
 - [ ] "D"elete func.
 - [ ] Improve UI/UX
 - [ ] Filter abusive queries
