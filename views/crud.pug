@@ -1,11 +1,39 @@
 extends layout
 
 block content
-    h2= "Submit a form to view all collection entries"
-    form(action='/post' method='POST')
+
+    h2= "Submit a new entry"
+    
+    form(action='/crud' method='POST')
         label
             | name:
-            input(type='text', name='name', value='')
+            input(type='text', name='name')
             | surname:
-            input(type='text', name='surname', value='')
+            input(type='text', name='surname')
         input(type='submit', value='Submit')
+    |
+    |
+    h3= "Change name:"
+    form(action='/change' method='POST')
+        label
+            | Old name:
+            input(type="text", name='old_name')
+            | New name:
+            input(type="text", name='new_name')
+        input(type='submit', value='Submit')
+    |
+    |
+    h3= "Change surname:"
+    form(action='/change' method='POST')
+        label
+            | Old surname:
+            input(type="text", name='old_surname')
+            | New surname:
+            input(type="text", name='new_surname')
+        input(type='submit', value='Submit')
+    |
+    |
+    ul
+    each data in collection
+        li= data.name + ' ' + data.surname
+        //   button#change-name-button(type='submit', form="name_form" value="Submit") Submit
