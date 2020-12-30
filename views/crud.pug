@@ -6,9 +6,9 @@ block content
     
     form(action='/crud' method='POST')
         label
-            | name:
+            | name: 
             input(type='text', name='name')
-            | surname:
+            |  surname: 
             input(type='text', name='surname')
         input(type='submit', value='Submit')
     |
@@ -16,9 +16,9 @@ block content
     h3= "Change name:"
     form(action='/change' method='POST')
         label
-            | Old name:
+            | Old name: 
             input(type="text", name='old_name')
-            | New name:
+            |  New name: 
             input(type="text", name='new_name')
         input(type='submit', value='Submit')
     |
@@ -26,12 +26,14 @@ block content
     h3= "Change surname:"
     form(action='/change' method='POST')
         label
-            | Old surname:
+            | Old surname: 
             input(type="text", name='old_surname')
-            | New surname:
+            |  New surname: 
             input(type="text", name='new_surname')
         input(type='submit', value='Submit')
     |
+    |
+    h3= "Inserted entries:"
     |
     ul
     each data in collection
