@@ -35,7 +35,7 @@ block content
     |
     h3= "Inserted entries:"
     |
-    ul
-    each data in collection
-        li= data.name + ' ' + data.surname
-        //   button#change-name-button(type='submit', form="name_form" value="Submit") Submit
+    ol
+        each data in collection
+            li= data.name + ' ' + data.surname
+            //   button#change-name-button(type='submit', form="name_form" value="Submit") Submit
