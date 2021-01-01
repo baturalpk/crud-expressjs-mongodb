@@ -27,12 +27,6 @@ router.post('/', (req, res, next) => {
             })
         //client.close();
     });
-    //res.send(/* view all entries */);
-})
-
-router.put('/', (req, res) => {
-    console.log(req.body);
-    res.send(req.body.old_name + " " + req.body.new_name)
 })
 
 module.exports = router;
