@@ -6,7 +6,7 @@
 - [x] "C"reate functionality ✓
 - [x] "R"ead func. ✓
 - [X] "U"pdate func. ✓
-- [ ] "D"elete func.
+- [X] "D"elete func. ✓
 - [ ] Improve UI/UX
 - [ ] Filter abusive queries
 - [ ] Build search box
