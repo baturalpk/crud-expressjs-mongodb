@@ -30,7 +30,15 @@ block content
             input(type="text", name='old_surname')
             |  New surname: 
             input(type="text", name='new_surname')
-        input(type='submit', value='Submit')
+        input(type='submit', value='Change')
+    |
+    |
+    h3= "Delete desired element by list-number:"
+    form(action="/delete", method="post")
+        label
+            | Element ID at the list below:
+            input(type="text", name = 'ID')
+        input(type="submit", value='Delete')
     |
     |
     h3= "Inserted entries:"
