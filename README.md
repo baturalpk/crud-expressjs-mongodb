@@ -8,4 +8,4 @@
 - [X] "U"pdate func. ✓
 - [X] "D"elete func. ✓
 - [ ] Improve UI/UX
-- [ ] Filter abusive queries
+- [X] Filter abusive queries ✓
