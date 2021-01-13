@@ -1,49 +1,65 @@
 extends layout
 
 block content
-
-    h2= "Submit a new entry"
-    
-    form(action='/crud' method='POST')
-        label
-            | name: 
-            input(type='text', name='name')
-            |  surname: 
-            input(type='text', name='surname')
-        input(type='submit', value='Submit')
-    |
-    |
-    h3= "Change name:"
-    form(action='/change' method='POST')
-        label
-            | Old name: 
-            input(type="text", name='old_name')
-            |  New name: 
-            input(type="text", name='new_name')
-        input(type='submit', value='Change')
-    |
-    |
-    h3= "Change surname:"
-    form(action='/change' method='POST')
-        label
-            | Old surname: 
-            input(type="text", name='old_surname')
-            |  New surname: 
-            input(type="text", name='new_surname')
-        input(type='submit', value='Change')
-    |
-    |
-    h3= "Delete desired element by list-number (Seperate with comma for multiple deletion):"
-    form(action="/delete", method="post")
-        label
-            | Element IDs at the list below:
-            input(type="text", name = 'ID')
-        input(type="submit", value='Delete')
-    |
-    |
-    h3= "Inserted entries:"
-    |
-    ol
-        each data in collection
-            li= data.name + ' ' + data.surname
-            //   button#change-name-button(type='submit', form="name_form" value="Submit") Submit
+    div
+        section(class='container')
+            div(class='input-block')
+                a(href='/')
+                    img(src='images/home-icon.png' alt='Return Homepage' style='width:144px; height:144px;')
+                h2= "Submit a new entry:"
+                form(action='/crud' method='POST')
+                    label
+                        | Value-1: 
+                        input(type='text', name='name')
+                        br
+                        br
+                        |  Value-2: 
+                        input(type='text', name='surname')
+                    input(type='submit', value='Submit')
+                |
+                br
+                |
+                h3= "Change name:"
+                form(action='/change' method='POST')
+                    label
+                        | Old Value-1: 
+                        input(type="text", name='old_name')
+                        br
+                        br
+                        |  New Value-1: 
+                        input(type="text", name='new_name')
+                    input(type='submit', value='Change')
+                |
+                br
+                |
+                h3= "Change surname:"
+                form(action='/change' method='POST')
+                    label
+                        | Old Value-2: 
+                        input(type="text", name='old_surname')
+                        br
+                        br
+                        |  New Value-2: 
+                        input(type="text", name='new_surname')
+                    input(type='submit', value='Change')
+                |
+                br
+                br
+                |
+                h3= "Delete desired element by list-number"
+                h4= "( Seperate with comma for multiple deletion ):"
+                form(action="/delete", method="post")
+                    label
+                        | Element IDs at the list below: 
+                        input(type="text", name = 'ID')
+                    input(type="submit", value='Delete')
+                |
+                br
+                
+            div(class='entries-block')
+                h3(class='entries')= "Inserted entries:"
+                |
+                ol
+                    each data in collection
+                        li= data.name + ' ' + data.surname
+                    

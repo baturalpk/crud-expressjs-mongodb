@@ -1,8 +1,104 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: freight-text-pro, serif;
+  font-style: normal;
+  font-weight: 300;
+  background-color: #201C1B;
 }
 
-a {
-  color: #00B7FF;
+div {
+  width: max-content;
+}
+
+li {
+  width: 3%;
+  margin-left: 3px;
+  margin-right: 3px;
+  border: 2px;
+  border-style: none;
+  border-spacing: 5px;
+  padding: 5px;
+  color: burlywood;
+  list-style: decimal;
+}
+
+form {
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+}
+
+h1, h2, h3, h4 {
+  color: deepskyblue;
+  font-family: freight-text-pro, serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+input {
+  height: 25px;
+  background-color: #DC143C;
+  margin: 4px;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  border: 1.5px;
+  border-style: solid;
+  border-color: blanchedalmond;
+  border-radius: 15%;
+}
+
+.input-block {
+  float: left;
+}
+
+.entries-block {
+  margin-left: 3%;
+}
+
+.entries {
+  color: blanchedalmond;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.index-body {
+  margin: auto;
+}
+
+a:link {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: #DC143C;
+  font-weight: 600;
+}
+
+a:visited {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: #DC143C;
+  font-weight: 600;
+}
+
+a:hover {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: yellow;
+  font-weight: 600;
+}
+
+#signature {
+  color: bisque;
+  font-family: freight-text-pro, serif;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+#hidden {
+  color: #201C1B;
+  font-family: freight-text-pro, serif;
+  font-style: bold;
+  font-weight: 600;
 }

@@ -1,10 +1,19 @@
 extends layout
 
 block content
-  h1= title
-  |
-  //p= "Heyyoo " + ip
-  |
-  a(class='button' href='/crud') Click here to go CRUD panel...
-  |
-  p CREATED w/ Node - Expressjs - Pugjs- MongoDB - Heroku by Baturalp K.
+  div(class='index-body')
+    img(src='images/tux.png' style='width:347px; height:365px;')
+    |
+    h1= title
+    |
+    //p= "Heyyoo " + ip
+    |
+    a(class='button' href='/crud') Click here to go CRUD panel...
+    br
+    br
+    p(id='signature') CREATED w/ Node - Expressjs - Pugjs- MongoDB - Heroku by Baturalp K.
+    br
+    br
+    br
+    br
+    a(class='button' id='hidden' href='images/tux-hidden.png') Uwww, u found huh!? Click then...
