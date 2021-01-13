@@ -7,5 +7,5 @@
 - [x] "R"ead func. ✓
 - [X] "U"pdate func. ✓
 - [X] "D"elete func. ✓
-- [ ] Improve UI/UX
+- [X] Improve UI/UX ✓
 - [X] Filter abusive queries ✓
